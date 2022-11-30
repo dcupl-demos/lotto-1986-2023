@@ -1,0 +1,134 @@
+{
+  "key": "lotto",
+  "autoGenerateKey": true,
+  "properties": [
+    {
+      "key": "wochentag",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "datum",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "z1asc",
+      "type": "int",
+      "filter":true
+    },
+    {
+      "key": "z2asc",
+      "type": "int",
+      "filter":true
+    },
+    {
+      "key": "z3asc",
+      "type": "int",
+      "filter":true
+    },
+    {
+      "key": "z4asc",
+      "type": "int",
+      "filter":true
+    },
+    {
+      "key": "z5asc",
+      "type": "int",
+      "filter":true
+    },
+    {
+      "key": "z6asc",
+      "type": "int",
+      "filter":true
+    },
+    {
+      "key": "zusatzzahl",
+      "type": "int",
+      "filter":true
+    },
+    {
+      "key": "sechser",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "quoteSechser",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "fuenferZz",
+      "type": "int",
+      "filter":true,
+      "aggregate": true
+    },
+    {
+      "key": "quoteFuenferZz",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "fuenfer",
+      "type": "int",
+      "filter":true,
+      "aggregate": true
+    },
+    {
+      "key": "quoteFuenfer",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "viererZz",
+      "type": "int",
+      "filter":true,
+      "aggregate": true
+    },
+    {
+      "key": "quoteViererZz",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "vierer",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "quoteVierer",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "dreierZz",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "quoteDreierZz",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "dreier",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "quoteDreier",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "nrOfZz",
+      "type": "string",
+      "filter":true
+    },
+    {
+      "key": "quoteZz",
+      "type": "string",
+      "filter":true
+    }
+  ]
+}

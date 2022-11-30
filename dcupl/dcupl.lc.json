@@ -1,0 +1,78 @@
+{
+  "applications": [
+    {
+      "key": "default",
+      "description": "Lotto AUT 1986-2022"
+    }
+  ],
+  "resources": [
+    {
+      "url": "${baseUrl}/models/lotto.dcupl.json",
+      "type": "model"
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-1986-2000_ATS.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2001-2010_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2010-2017_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2018_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2019_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2020_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2021_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2022_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      }
+    }
+  ]
+}

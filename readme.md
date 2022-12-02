@@ -33,9 +33,9 @@
 
 # Lotto AUT 1986-2022
 
-This Project was generated using the `@dcupl/cli`. More informations can be found on [https://dcupl.com](https://dcupl.com) and especially in the [dcupl Docs](https://docs.dcupl.com).
+This Project was generated using the `@dcupl/cli`. More information can be found on [https://dcupl.com](https://dcupl.com) and especially in the [dcupl Docs](https://docs.dcupl.com).
 
-The initial dataset is published by win2day - https://www.win2day.at/lotterie/lotto/lotto-statistik-zahlen-ergebnisse-download - the online gaming platform of the Austrian Lotteries.
+The initial dataset is published by win2day - https://www.win2day.at/lotterie/lotto/lotto-statistik-zahlen-ergebnisse-download - the online gaming platform of the Austrian Lotteries. The formatting of the original data has been revised and redundancies have been reduced.
 
 
 
@@ -60,4 +60,4 @@ dcupl serve
 ```
 
 ### 4) View your data in the dcupl Console
-View your data in the **Data Explorer Tab** in the dcupl Console (you may need reload your browser)
+Switch to "Local Dev Server" and open one of the predefined applications. View your data in the **Data Explorer Tab** in the dcupl Console.

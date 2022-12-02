@@ -34,7 +34,7 @@
 This Project was generated using the `@dcupl/cli`. More information can be found on [https://dcupl.com](https://dcupl.com) and especially in the [dcupl Docs](https://docs.dcupl.com).
 
 ## win2day dataset
-The initial dataset is published by win2day - https://www.win2day.at/lotterie/lotto/lotto-statistik-zahlen-ergebnisse-download - the online gaming platform of the Austrian Lotteries. The formatting of the original data has been revised and redundancies have been reduced.
+The initial dataset is published by win2day - https://www.win2day.at/lotterie/lotto/lotto-statistik-zahlen-ergebnisse-download - the online gaming platform of the Austrian Lotteries. The formatting of the original data has been revised and redundancies have been reduced. The data respectively the whole project is also published on [kaggle](https://www.kaggle.com/datasets/gernotbernkopf/lottery-austria-1986-til-2022).
 
 ## different currencies
 Be aware that winning totals up to 2001 are in ATS - Austria's currency _Schilling_ - and in EUR starting with 2001 up to 2022. Therefore three applications have been defined and the resources have been tagged with ATS and EUR.

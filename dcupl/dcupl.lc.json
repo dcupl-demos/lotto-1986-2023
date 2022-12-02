@@ -1,14 +1,25 @@
 {
   "applications": [
     {
-      "key": "default",
+      "key": "default (ATS + EUR mixed)",
       "description": "Lotto AUT 1986-2022"
+    },
+    {
+      "key": "ATS",
+      "description": "Lotto AUT 1986-2000",
+      "resourceTags": ["ATS"]
+    },
+    {
+      "key": "EUR",
+      "description": "Lotto AUT 2001-2022",
+      "resourceTags": ["EUR"]
     }
   ],
   "resources": [
     {
       "url": "${baseUrl}/models/lotto.dcupl.json",
-      "type": "model"
+      "type": "model",
+      "tags": ["EUR","ATS"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-1986-2000_ATS.csv",
@@ -16,7 +27,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["ATS"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2001-2010_EUR.csv",
@@ -24,7 +36,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["EUR"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2010-2017_EUR.csv",
@@ -32,7 +45,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["EUR"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2018_EUR.csv",
@@ -40,7 +54,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["EUR"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2019_EUR.csv",
@@ -48,7 +63,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["EUR"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2020_EUR.csv",
@@ -56,7 +72,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["EUR"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2021_EUR.csv",
@@ -64,7 +81,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["EUR"]
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2022_EUR.csv",
@@ -72,7 +90,8 @@
       "model": "lotto",
       "options": {
         "updateType": "upsert"
-      }
+      },
+      "tags": ["EUR"]
     }
   ]
 }

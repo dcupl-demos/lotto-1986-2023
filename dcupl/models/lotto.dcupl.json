@@ -3,132 +3,308 @@
   "autoGenerateKey": true,
   "properties": [
     {
-      "key": "wochentag",
+      "key": "weekday",
       "type": "string",
-      "filter": true
+      "filter": true,
+      "meta": {
+        "name": "Weekday",
+        "description": "Day of the week"
+      }
     },
     {
-      "key": "datum",
+      "key": "date",
       "type": "string",
-      "filter": true
+      "filter": true,
+      "meta": {
+        "name": "Date"
+      }
     },
     {
-      "key": "z1asc",
-      "type": "int",
-      "filter":true
-    },
-    {
-      "key": "z2asc",
-      "type": "int",
-      "filter":true
-    },
-    {
-      "key": "z3asc",
-      "type": "int",
-      "filter":true
-    },
-    {
-      "key": "z4asc",
-      "type": "int",
-      "filter":true
-    },
-    {
-      "key": "z5asc",
-      "type": "int",
-      "filter":true
-    },
-    {
-      "key": "z6asc",
-      "type": "int",
-      "filter":true
-    },
-    {
-      "key": "zusatzzahl",
-      "type": "int",
-      "filter":true
-    },
-    {
-      "key": "sechser",
+      "key": "numbersAsc",
       "type": "string",
-      "filter":true
+      "expression": "${nr1asc}, ${nr2asc}, ${nr3asc}, ${nr4asc}, ${nr5asc}, ${nr6asc}, ${additionalNr}",
+      "filter": true,
+      "meta": {
+        "name": "Numbers drawn ascending"
+      }
     },
     {
-      "key": "quoteSechser",
+      "key": "numbersDrawn",
       "type": "string",
-      "filter":true
+      "expression": "${nr1}, ${nr2}, ${nr3}, ${nr4}, ${nr5}, ${nr6}, ${additionalNr}",
+      "filter":true,
+      "meta": {
+        "name": "Numbers drawn"
+      }
     },
     {
-      "key": "fuenferZz",
+      "key": "nr1",
       "type": "int",
       "filter":true,
-      "aggregate": true
+      "meta": {
+        "name": "Number 1",
+        "description": "1st drawn number (not included in each data resource)"
+      }
     },
     {
-      "key": "quoteFuenferZz",
-      "type": "string",
-      "filter":true
-    },
-    {
-      "key": "fuenfer",
+      "key": "nr2",
       "type": "int",
       "filter":true,
-      "aggregate": true
+      "meta": {
+        "name": "Number 2",
+        "description": "2nd drawn number (not included in each data resource)"
+      }
     },
     {
-      "key": "quoteFuenfer",
-      "type": "string",
-      "filter":true
-    },
-    {
-      "key": "viererZz",
+      "key": "nr3",
       "type": "int",
       "filter":true,
-      "aggregate": true
+      "meta": {
+        "name": "Number 3",
+        "description": "Third drawn number (not included in each data resource)"
+      }
     },
     {
-      "key": "quoteViererZz",
-      "type": "string",
-      "filter":true
+      "key": "nr4",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 4",
+        "description": "Fourth drawn number (not included in each data resource)"
+      }
     },
     {
-      "key": "vierer",
-      "type": "string",
-      "filter":true
+      "key": "nr5",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 5",
+        "description": "Fifth drawn number (not included in each data resource)"
+      }
     },
     {
-      "key": "quoteVierer",
-      "type": "string",
-      "filter":true
+      "key": "nr6",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 6",
+        "description": "Sixth drawn number (not included in each data resource)"
+      }
     },
     {
-      "key": "dreierZz",
-      "type": "string",
-      "filter":true
+      "key": "nr1asc",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 1 ascending"
+      }
     },
     {
-      "key": "quoteDreierZz",
-      "type": "string",
-      "filter":true
+      "key": "nr2asc",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 2 ascending"
+      }
     },
     {
-      "key": "dreier",
-      "type": "string",
-      "filter":true
+      "key": "nr3asc",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 3 ascending"
+      }
     },
     {
-      "key": "quoteDreier",
-      "type": "string",
-      "filter":true
+      "key": "nr4asc",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 4 ascending"
+      }
     },
     {
-      "key": "nrOfZz",
-      "type": "string",
-      "filter":true
+      "key": "nr5asc",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 5 ascending"
+      }
     },
     {
-      "key": "quoteZz",
+      "key": "nr6asc",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Number 6 ascending"
+      }
+    },
+    {
+      "key": "additionalNr",
+      "type": "int",
+      "filter":true,
+      "meta": {
+        "name": "Additional number"
+      }
+    },
+    {
+      "key": "six",
       "type": "string",
-      "filter":true
+      "filter":true,
+      "meta": {
+        "name": "Six",
+        "description": "Six correct numbers"
+      }
+    },
+    {
+      "key": "rateSix",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize Rate",
+        "description": "Prize rate for six correct numbers"
+      }
+    },
+    {
+      "key": "fiveAddNr",
+      "type": "int",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Five + Additional Number",
+        "description": "Five correct numbers + correct additional number"
+      }
+    },
+    {
+      "key": "rateFiveAddNr",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize Rate",
+        "description": "Prize rate for five correct numbers + correct additional number"
+      }
+    },
+    {
+      "key": "five",
+      "type": "int",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Five",
+        "description": "Five correct numbers"
+      }
+    },
+    {
+      "key": "rateFive",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize Rate",
+        "description": "Prize rate for five correct numbers"
+      }
+    },
+    {
+      "key": "fourAddNr",
+      "type": "int",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Four + Additional Number",
+        "description": "Four correct numbers + correct additional number"
+      }
+    },
+    {
+      "key": "rateFourAddNr",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize Rate",
+        "description": "Prize rate for four correct numbers + correct additional number"
+      }
+    },
+    {
+      "key": "four",
+      "type": "int",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Four",
+        "description": "Four correct numbers"
+      }
+    },
+    {
+      "key": "rateFour",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize Rate",
+        "description": "Prize rate for four correct numbers"
+      }
+    },
+    {
+      "key": "threeAddNr",
+      "type": "int",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Three + Additional Number",
+        "description": "Three correct numbers + correct additional number"
+      }
+    },
+    {
+      "key": "rateThreeAddNr",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize Rate",
+        "description": "Prize rate for three correct numbers + correct additional number"
+      }
+    },
+    {
+      "key": "three",
+      "type": "int",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Three",
+        "description": "Three correct numbers"
+      }
+    },
+    {
+      "key": "rateThree",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize Rate",
+        "description": "Prize rate for three correct numbers"
+      }
+    },
+    {
+      "key": "nrOfAddNr",
+      "type": "int",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "NrOf Additional Numbers",
+        "description": "Amount of drawn additional numbers"
+      }
+    },
+    {
+      "key": "rateAddNr",
+      "type": "float",
+      "filter":true,
+      "aggregate": true,
+      "meta": {
+        "name": "Prize rate additional number",
+        "description": "Prize rate for the additional number"
+      }
     }
   ]
 }

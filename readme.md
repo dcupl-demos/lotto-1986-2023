@@ -53,7 +53,7 @@ npm install
 - Go to [https://console.dcupl.com](https://console.dcupl.com) and create your **free** account.
 - Set your `projectId` in the dcupl.config.json
 - Set your `apiKey` in the dcupl.secrets.json
-- Push your local workspace to the dcupl Console using the CLI `dcupl files:push --tag my-first-push`
+- Push your local workspace to the dcupl Console using the CLI `dcupl files:push --name my-first-push`
 
 
 ### 3) Start your development server

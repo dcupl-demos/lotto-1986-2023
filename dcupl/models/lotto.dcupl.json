@@ -13,7 +13,8 @@
     },
     {
       "key": "date",
-      "type": "string",
+      "type": "date",
+      "inputFormat": "dd.MM.yyyy",
       "filter": true,
       "meta": {
         "name": "Date"

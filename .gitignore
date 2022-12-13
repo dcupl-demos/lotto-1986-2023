@@ -1,3 +1,5 @@
 node_modules
 dcupl.secrets.json
 .DS_Store
+/_DEV_dcupl.config.json
+/_DEV_dcupl.secrets.json

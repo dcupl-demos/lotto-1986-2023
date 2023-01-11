@@ -2,8 +2,8 @@
   "applications": [
     {
       "key": "default (ATS + EUR mixed)",
-      "description": "Drawn numbers of the Austrian Lotteries, starting in 1986 up to 2022",
-      "name": "Lotto 1986-2022 (ATS+EUR mixed)",
+      "description": "Drawn numbers of the Austrian Lotteries, starting in 1986 up to 2023",
+      "name": "Lotto 1986-2023 (ATS+EUR mixed)",
       "resourceTags": []
     },
     {
@@ -16,11 +16,11 @@
     },
     {
       "key": "EUR",
-      "description": "Drawn numbers of the Austrian Lotteries, starting in 2001 up to 2022 Nov.",
+      "description": "Drawn numbers of the Austrian Lotteries, starting in 2001 up to 2023 Jan.",
       "resourceTags": [
         "EUR"
       ],
-      "name": "Lotto 2001-2022 (EUR)"
+      "name": "Lotto 2001-2023 (EUR)"
     }
   ],
   "resources": [
@@ -111,6 +111,17 @@
     },
     {
       "url": "${baseUrl}/data/lotto-ziehungen-2022_EUR.csv",
+      "type": "data",
+      "model": "lotto",
+      "options": {
+        "updateType": "upsert"
+      },
+      "tags": [
+        "EUR"
+      ]
+    },
+    {
+      "url": "${baseUrl}/data/lotto-ziehungen-2023_EUR.csv",
       "type": "data",
       "model": "lotto",
       "options": {

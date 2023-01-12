@@ -8,7 +8,7 @@
       "filter": true,
       "meta": {
         "name": "Weekday",
-        "description": "Day of the week"
+        "description": "Day of the week of the lottery drawing"
       }
     },
     {
@@ -17,7 +17,8 @@
       "inputFormat": "dd.MM.yyyy",
       "filter": true,
       "meta": {
-        "name": "Date"
+        "name": "Date",
+        "description": "Date of the lottery drawing"
       }
     },
     {
@@ -26,7 +27,8 @@
       "expression": "${nr1asc}, ${nr2asc}, ${nr3asc}, ${nr4asc}, ${nr5asc}, ${nr6asc}, ${additionalNr}",
       "filter": true,
       "meta": {
-        "name": "Numbers drawn ascending"
+        "name": "Numbers drawn ASC",
+        "description": "All numbers which have been drawn, sorted in ascending order"
       }
     },
     {
@@ -35,7 +37,8 @@
       "expression": "${nr1}, ${nr2}, ${nr3}, ${nr4}, ${nr5}, ${nr6}, ${additionalNr}",
       "filter":true,
       "meta": {
-        "name": "Numbers drawn"
+        "name": "Numbers drawn",
+        "description": "All numbers which have been drawn (unsorted, not included in each data resource)"
       }
     },
     {
@@ -97,7 +100,8 @@
       "type": "int",
       "filter":true,
       "meta": {
-        "name": "Number 1 ascending"
+        "name": "Number 1 ASC",
+        "description": "Lowest number which has been drawn"
       }
     },
     {
@@ -105,7 +109,8 @@
       "type": "int",
       "filter":true,
       "meta": {
-        "name": "Number 2 ascending"
+        "name": "Number 2 ASC",
+        "description": "Seconde lowest number which has been drawn"
       }
     },
     {
@@ -113,7 +118,8 @@
       "type": "int",
       "filter":true,
       "meta": {
-        "name": "Number 3 ascending"
+        "name": "Number 3 ASC",
+        "description": "Third lowest number which has been drawn"
       }
     },
     {
@@ -121,7 +127,8 @@
       "type": "int",
       "filter":true,
       "meta": {
-        "name": "Number 4 ascending"
+        "name": "Number 4 ASC",
+        "description": "Third highest number which has been drawn"
       }
     },
     {
@@ -129,7 +136,8 @@
       "type": "int",
       "filter":true,
       "meta": {
-        "name": "Number 5 ascending"
+        "name": "Number 5 ASC",
+        "description": "Second highest number which has been drawn"
       }
     },
     {
@@ -137,7 +145,8 @@
       "type": "int",
       "filter":true,
       "meta": {
-        "name": "Number 6 ascending"
+        "name": "Number 6 ASC",
+        "description": "Highest number which has been drawn"
       }
     },
     {
@@ -145,7 +154,8 @@
       "type": "int",
       "filter":true,
       "meta": {
-        "name": "Additional number"
+        "name": "Additional number",
+        "description": "Additional number (Zusatzzahl) which has been drawn"
       }
     },
     {
